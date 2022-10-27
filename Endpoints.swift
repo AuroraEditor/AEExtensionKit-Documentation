@@ -1,6 +1,6 @@
 //
-//  HelloWorld.swift
-//  HelloWorldExtension
+//  Endpoints.swift
+//  EndpointsExtension
 //
 //  Created by Wesley de Groot on 6 October 2022.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import AEExtensionKit
 
-public class HelloWorldExtension: ExtensionInterface {
+public class EndpointsExtension: ExtensionInterface {
     var api: ExtensionAPI
 
     init(api: ExtensionAPI) {
@@ -18,23 +18,24 @@ public class HelloWorldExtension: ExtensionInterface {
 
     public func register() -> ExtensionManifest {
         return .init(
-            name: "HelloWorldExtension",
-            displayName: "HelloWorldExtension",
+            name: "EndpointsExtension",
+            displayName: "EndpointsExtension",
             version: "1.0",
             minAEVersion: "1.0"
         )
     }
 
     public func respond(action: String, parameters: [String: Any]) -> Bool {
+        // Please do NOT change the format of this function.
         print("respond(action: String, parameters: [String: Any])", action, parameters)
 
         return true
     }
 }
 
-@objc(HelloWorldBuilder)
-public class HelloWorldBuilder: ExtensionBuilder {
+@objc(EndpointsBuilder)
+public class EndpointsBuilder: ExtensionBuilder {
     public override func build(withAPI api: ExtensionAPI) -> ExtensionInterface {
-        return HelloWorldExtension(api: api)
+        return EndpointsExtension(api: api)
     }
 }
