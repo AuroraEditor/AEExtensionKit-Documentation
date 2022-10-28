@@ -60,7 +60,7 @@ func handleParameter(line: String) -> Parameter {
 
 func generate() -> [Function] {
     do {
-        let file = URL(fileURLWithPath: "endpoint.swift")
+        let file = URL(fileURLWithPath: "AEExtensionKit.swift")
         let contents = try String(contentsOf: file)
         let lines = contents.components(separatedBy: "\n")
 
@@ -204,16 +204,16 @@ func generateWiki(functions: [Function]) -> String {
 
 let functions = generate()
 
-functions
+try? functions
    .toJSON(pretty: false)
    .data(using: .utf8)?
-   .write(to: .init(fileURLWithPath: "endpoints.min.json"), options: .atomic)
+   .write(to: .init(fileURLWithPath: "generated/json.min.json"), options: .atomic)
 
-functions
+try? functions
    .toJSON(pretty: true)
    .data(using: .utf8)?
-   .write(to: .init(fileURLWithPath: "endpoints.json"), options: .atomic)
+   .write(to: .init(fileURLWithPath: "generated/json.json"), options: .atomic)
 
 try? generateWiki(functions: functions)
-        .data(using: .utf8)?
-        .write(to: URL(fileURLWithPath: "endpoints.wiki.md"), options: .atomic)
+    .data(using: .utf8)?
+    .write(to: URL(fileURLWithPath: "generated/wiki.md"), options: .atomic)
