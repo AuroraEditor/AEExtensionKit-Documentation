@@ -3,11 +3,11 @@
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|file|String|The file that was opened.|
-|contents|Data|The file contents (data).|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
+<tr><td>contents</td><td>Data</td><td>The file contents (data).</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -29,12 +29,12 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|workspace|String|The current workspace.|
-|file|String|The file that was opened.|
-|contents|Data|The file contents (data).|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>workspace</td><td>String</td><td>The current workspace.</td></tr>
+<tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
+<tr><td>contents</td><td>Data</td><td>The file contents (data).</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -57,10 +57,10 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|file|String|The file that was opened.|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -81,11 +81,11 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|row|Int|The row in the file.|
-|column|Int|The column in the file.|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>row</td><td>Int</td><td>The row in the file.</td></tr>
+<tr><td>column</td><td>Int</td><td>The column in the file.</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -107,10 +107,10 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|file|String|The file that was activated.|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>file</td><td>String</td><td>The file that was activated.</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -131,10 +131,10 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|file|String|The file that was deactivated.|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>file</td><td>String</td><td>The file that was deactivated.</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -155,10 +155,10 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|visible|Bool|Is the navigator pane visible?|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>visible</td><td>Bool</td><td>Is the navigator pane visible?</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -179,10 +179,10 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-|Parameter|Type|Description|
-|---|---|---|
-|visible|Bool|Is the inspector pane visible?|
-
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>visible</td><td>Bool</td><td>Is the inspector pane visible?</td></tr>
+</table>
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {

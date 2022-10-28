@@ -156,13 +156,17 @@ func generateWikiFor(function: Function) -> String {
 
     if !function.parameters.isEmpty {
         wiki += "**Parameters**\n"
-        wiki += "|Parameter|Type|Description|\n"
-        wiki += "|---|---|---|\n"
+        wiki += "<table>\n"
+        wiki += "<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>\n"
 
         for parameter in function.parameters {
-            wiki += "|\(parameter.name)|\(parameter.type)|\(parameter.description)|\n"
+            wiki += "<tr>"
+            wiki += "<td>\(parameter.name)</td>"
+            wiki += "<td>\(parameter.type)</td>"
+            wiki += "<td>\(parameter.description)</td>"
+            wiki += "</tr>\n"
         }
-        wiki += "\n"
+        wiki += "</table>\n"
     }
 
     wiki += "**Example Implementation:**\n"
