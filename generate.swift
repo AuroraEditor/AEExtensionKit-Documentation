@@ -167,6 +167,7 @@ func generateWikiFor(function: Function) -> String {
             wiki += "</tr>\n"
         }
         wiki += "</table>\n"
+        wiki += "\n"
     }
 
     wiki += "**Example Implementation:**\n"

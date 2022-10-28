@@ -8,6 +8,7 @@
 <tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
 <tr><td>contents</td><td>Data</td><td>The file contents (data).</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -35,6 +36,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
 <tr><td>contents</td><td>Data</td><td>The file contents (data).</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -61,6 +63,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -86,6 +89,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><td>row</td><td>Int</td><td>The row in the file.</td></tr>
 <tr><td>column</td><td>Int</td><td>The column in the file.</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -111,6 +115,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td>file</td><td>String</td><td>The file that was activated.</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -135,6 +140,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td>file</td><td>String</td><td>The file that was deactivated.</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -159,6 +165,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td>visible</td><td>Bool</td><td>Is the navigator pane visible?</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
@@ -183,6 +190,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td>visible</td><td>Bool</td><td>Is the inspector pane visible?</td></tr>
 </table>
+
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
