@@ -220,9 +220,4 @@ try? generateWiki(functions: functions)
     .data(using: .utf8)?
     .write(to: URL(fileURLWithPath: "generated/wiki.md"), options: .atomic)
 
-// For github pages
-try? generateWiki(functions: functions)
-    .data(using: .utf8)?
-    .write(to: URL(fileURLWithPath: "docs/readme.md"), options: .atomic)
-
 print("Done!")
