@@ -188,8 +188,6 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > It is used, and as the name suggests, to do nothing<br/>
 > 
 
-**Parameters**
-
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
