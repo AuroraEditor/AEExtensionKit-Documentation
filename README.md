@@ -1,13 +1,18 @@
-# API Endpoints demp
+# AEExtensionKit functions documentation generator
 
-`Endpoints` extension.
+### `endpoint.swift`
+contains all the function definitions for [AEExtensionKit](https://github.com/AuroraEditor/AEExtensionKit).
 
-Please report issues on https://github.com/AuroraEditor/AuroraEditor
+### `generate.swift`
+generates:
+- [generated/json.json](generated/json.json)
+<br />a JSON file containing all the function definitions
+- [generated/json.min.json](generated/json.min.json)
+<br />a minified JSON file containing all the function definitions
+- [generated/wiki.md](generated/wiki.md)
+<br />a markdown file containing all the function definitions for use in the [WIKI](https://github.com/AuroraEditor/AuroraEditor/wiki/Extension-development)
 
-For help about extensions go to [#extensions](https://discord.gg/cCcwRFfY8f) on our [Discord](https://discord.gg/QYTtDYMMYj) server.
-
-### How to build/use
-
-1) Clone this project
-2) Press `⌘B`
-3) Open Aurora Editor
+# How to use
+1. Clone the repository
+2. Edit [AEExtensionKit.swift](AEExtensionKit.swift) to add new functions to the documentation
+3. Run `swift generate.swift`
