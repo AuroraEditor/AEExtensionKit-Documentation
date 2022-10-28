@@ -22,6 +22,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 }
 ```
 
+---
+
 ### didOpen
 > Did open file in workspace<br/>
 > 
@@ -48,6 +50,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 }
 ```
 
+---
+
 ### didSave
 > Did save file<br/>
 > 
@@ -69,6 +73,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
     return true
 }
 ```
+
+---
 
 ### didMoveCaret
 > Did move caret to position<br/>
@@ -93,6 +99,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 }
 ```
 
+---
+
 ### didActivateTab
 > Did activate tab for file<br/>
 > 
@@ -114,6 +122,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
     return true
 }
 ```
+
+---
 
 ### didDeactivateTab
 > Did close tab for file<br/>
@@ -137,6 +147,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 }
 ```
 
+---
+
 ### didToggleNavigatorPane
 > Did toggle navigator pane<br/>
 > 
@@ -158,6 +170,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
     return true
 }
 ```
+
+---
 
 ### didToggleInspectorPane
 > Did toggle inspector pane<br/>
@@ -181,6 +195,8 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 }
 ```
 
+---
+
 ### noop
 > No Operation (noop)<br/>
 > <br/>
@@ -198,4 +214,6 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
     return true
 }
 ```
+
+---
 
