@@ -37,7 +37,7 @@ func didSave(file: String)
 /// Did move caret to position
 /// - Parameters:
 ///   - row: The row in the file.
-///  - column: The column in the file.
+///   - column: The column in the file.
 func didMoveCaret(row: Int, column: Int)
 
 /// Did activate tab for file
