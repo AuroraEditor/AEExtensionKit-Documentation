@@ -190,6 +190,8 @@ func generateWikiFor(function: Function) -> String {
     wiki += "}\n"
     wiki += "```\n"
     wiki += "\n"
+    wiki += "---\n"
+    wiki += "\n"
 
     return wiki
 }
