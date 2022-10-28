@@ -3,10 +3,10 @@
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| file | String | The file that was opened. |
-| contents | Data | The file contents (data). |
+|Parameter|Type|Description|
+|---|---|---|
+|file|String|The file that was opened.|
+|contents|Data|The file contents (data).|
 
 **Example Implementation:**
 ```swift
@@ -29,11 +29,11 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| workspace | String | The current workspace. |
-| file | String | The file that was opened. |
-| contents | Data | The file contents (data). |
+|Parameter|Type|Description|
+|---|---|---|
+|workspace|String|The current workspace.|
+|file|String|The file that was opened.|
+|contents|Data|The file contents (data).|
 
 **Example Implementation:**
 ```swift
@@ -57,9 +57,9 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| file | String | The file that was opened. |
+|Parameter|Type|Description|
+|---|---|---|
+|file|String|The file that was opened.|
 
 **Example Implementation:**
 ```swift
@@ -81,10 +81,10 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| row | Int | The row in the file. |
-| column | Int | The column in the file. |
+|Parameter|Type|Description|
+|---|---|---|
+|row|Int|The row in the file.|
+|column|Int|The column in the file.|
 
 **Example Implementation:**
 ```swift
@@ -107,9 +107,9 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| file | String | The file that was activated. |
+|Parameter|Type|Description|
+|---|---|---|
+|file|String|The file that was activated.|
 
 **Example Implementation:**
 ```swift
@@ -131,9 +131,9 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| file | String | The file that was deactivated. |
+|Parameter|Type|Description|
+|---|---|---|
+|file|String|The file that was deactivated.|
 
 **Example Implementation:**
 ```swift
@@ -155,9 +155,9 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| visible | Bool | Is the navigator pane visible? |
+|Parameter|Type|Description|
+|---|---|---|
+|visible|Bool|Is the navigator pane visible?|
 
 **Example Implementation:**
 ```swift
@@ -179,9 +179,9 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 > 
 
 **Parameters**
-| Parameter | Type | Description |
-| --- | --- | --- |
-| visible | Bool | Is the inspector pane visible? |
+|Parameter|Type|Description|
+|---|---|---|
+|visible|Bool|Is the inspector pane visible?|
 
 **Example Implementation:**
 ```swift

@@ -5,11 +5,11 @@ contains all the function definitions for [AEExtensionKit](https://github.com/Au
 
 ### `generate.swift`
 generates:
-- [generated/json.json](generated/json.json)
+- [docs/json.json](docs/json.json)
 <br />a JSON file containing all the function definitions
-- [generated/json.min.json](generated/json.min.json)
+- [docs/json.min.json](docs/json.min.json)
 <br />a minified JSON file containing all the function definitions
-- [generated/wiki.md](generated/wiki.md)
+- [docs/wiki.md](docs/wiki.md)
 <br />a markdown file containing all the function definitions for use in the [WIKI](https://github.com/AuroraEditor/AuroraEditor/wiki/Extension-development)
 
 # How to use

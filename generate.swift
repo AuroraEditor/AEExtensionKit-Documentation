@@ -156,11 +156,11 @@ func generateWikiFor(function: Function) -> String {
 
     if !function.parameters.isEmpty {
         wiki += "**Parameters**\n"
-        wiki += "| Parameter | Type | Description |\n"
-        wiki += "| --- | --- | --- |\n"
+        wiki += "|Parameter|Type|Description|\n"
+        wiki += "|---|---|---|\n"
 
         for parameter in function.parameters {
-            wiki += "| \(parameter.name) | \(parameter.type) | \(parameter.description) |\n"
+            wiki += "|\(parameter.name)|\(parameter.type)|\(parameter.description)|\n"
         }
         wiki += "\n"
     }
@@ -209,15 +209,20 @@ let functions = generate()
 try? functions
    .toJSON(pretty: false)
    .data(using: .utf8)?
-   .write(to: .init(fileURLWithPath: "generated/json.min.json"), options: .atomic)
+   .write(to: .init(fileURLWithPath: "docs/json.min.json"), options: .atomic)
 
 try? functions
    .toJSON(pretty: true)
    .data(using: .utf8)?
-   .write(to: .init(fileURLWithPath: "generated/json.json"), options: .atomic)
+   .write(to: .init(fileURLWithPath: "docs/json.json"), options: .atomic)
 
 try? generateWiki(functions: functions)
     .data(using: .utf8)?
-    .write(to: URL(fileURLWithPath: "generated/wiki.md"), options: .atomic)
+    .write(to: URL(fileURLWithPath: "docs/wiki.md"), options: .atomic)
+
+// For github pages
+try? generateWiki(functions: functions)
+    .data(using: .utf8)?
+    .write(to: URL(fileURLWithPath: "docs/readme.md"), options: .atomic)
 
 print("Done!")
