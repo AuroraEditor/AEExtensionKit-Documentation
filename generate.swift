@@ -204,16 +204,16 @@ func generateWiki(functions: [Function]) -> String {
 
 let functions = generate()
 
-//dump(functions)
+functions
+   .toJSON(pretty: false)
+   .data(using: .utf8)?
+   .write(to: .init(fileURLWithPath: "endpoints.min.json"), options: .atomic)
 
-//functions
-//    .toJSON(pretty: false)
-//    .data(using: .utf8)?
-//    .write(to: .init(string: "endpoints.min.json")!, options: .atomic)
-//
-//functions
-//    .toJSON(pretty: true)
-//    .data(using: .utf8)?
-//    .write(to: .init(string: "endpoints.json")!, options: .atomic)
+functions
+   .toJSON(pretty: true)
+   .data(using: .utf8)?
+   .write(to: .init(fileURLWithPath: "endpoints.json"), options: .atomic)
 
-print(generateWiki(functions: functions))
+try? generateWiki(functions: functions)
+        .data(using: .utf8)?
+        .write(to: URL(fileURLWithPath: "endpoints.wiki.md"), options: .atomic)
