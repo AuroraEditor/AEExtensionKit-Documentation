@@ -153,18 +153,18 @@ func generateWikiFor(function: Function) -> String {
     wiki += "### \(function.name)\n"
     wiki += "> \(function.description.replacingOccurrences(of: "\n", with: "<br/>\n> "))\n"
     wiki += "\n"
-    wiki += "**Parameters**\n"
 
     if !function.parameters.isEmpty {
+        wiki += "**Parameters**\n"
         wiki += "| Parameter | Type | Description |\n"
         wiki += "| --- | --- | --- |\n"
 
         for parameter in function.parameters {
             wiki += "| \(parameter.name) | \(parameter.type) | \(parameter.description) |\n"
         }
+        wiki += "\n"
     }
 
-    wiki += "\n"
     wiki += "**Example Implementation:**\n"
     wiki += "```swift\n"
     wiki += "public func respond(action: String, parameters: [String: Any]) -> Bool {\n"
