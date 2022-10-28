@@ -54,9 +54,14 @@
         "name" : "row",
         "type" : "Int",
         "description" : "The row in the file."
+      },
+      {
+        "name" : "column",
+        "type" : "Int",
+        "description" : "The column in the file."
       }
     ],
-    "description" : "Did move caret to position\n - column: The column in the file.\n"
+    "description" : "Did move caret to position\n"
   },
   {
     "name" : "didActivateTab",

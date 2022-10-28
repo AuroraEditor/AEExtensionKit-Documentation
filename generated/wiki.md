@@ -78,19 +78,20 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 
 ### didMoveCaret
 > Did move caret to position<br/>
->  - column: The column in the file.<br/>
 > 
 
 **Parameters**
 | Parameter | Type | Description |
 | --- | --- | --- |
 | row | Int | The row in the file. |
+| column | Int | The column in the file. |
 
 **Example Implementation:**
 ```swift
 public func respond(action: String, parameters: [String: Any]) -> Bool {
     if action == "didMoveCaret" {
-        if let row = parameters["row"] as? Int {
+        if let row = parameters["row"] as? Int,
+           let column = parameters["column"] as? Int {
             // Do something
         }
     }
