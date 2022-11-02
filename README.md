@@ -1,5 +1,7 @@
 # AEExtensionKit functions documentation generator
 
+<a href='https://twitter.com/intent/tweet?text=Try%20this%20new%20open-source%20code%20editor,%20Aurora%20Editor&url=https://auroraeditor.com&via=Aurora_Editor&hashtags=AuroraEditor,editor,AEIDE,developers,Aurora,OSS' target='_blank'><img src='https://img.shields.io/twitter/url/http/shields.io.svg?style=social'></a>
+
 ### `endpoint.swift`
 contains all the function definitions for [AEExtensionKit](https://github.com/AuroraEditor/AEExtensionKit).
 
