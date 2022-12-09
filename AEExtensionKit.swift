@@ -60,6 +60,11 @@ func didToggleNavigatorPane(visible: Bool)
 ///   - visible: Is the inspector pane visible?
 func didToggleInspectorPane(visible: Bool)
 
+/// Register AuroraAPI
+/// - Parameters:
+///   - callback: AuroraAPI Endpoint
+func registerCallback(callback: AuroraAPI -> Bool)
+
 /// No Operation (noop)
 /// 
 /// This is a no operation function

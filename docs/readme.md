@@ -206,6 +206,31 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 
 ---
 
+### registerCallback
+> Register AuroraAPI<br/>
+> 
+
+**Parameters**
+<table>
+<tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+<tr><td>callback</td><td>AuroraAPI -> Bool</td><td>AuroraAPI Endpoint</td></tr>
+</table>
+
+**Example Implementation:**
+```swift
+public func respond(action: String, parameters: [String: Any]) -> Bool {
+    if action == "registerCallback" {
+        if let callback = parameters["callback"] as? AuroraAPI -> Bool {
+            // Do something
+        }
+    }
+
+    return true
+}
+```
+
+---
+
 ### noop
 > No Operation (noop)<br/>
 > <br/>

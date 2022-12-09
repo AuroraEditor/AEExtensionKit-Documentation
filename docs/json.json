@@ -108,6 +108,17 @@
     "description" : "Did toggle inspector pane\n"
   },
   {
+    "name" : "registerCallback",
+    "parameters" : [
+      {
+        "name" : "callback",
+        "type" : "AuroraAPI -> Bool",
+        "description" : "AuroraAPI Endpoint"
+      }
+    ],
+    "description" : "Register AuroraAPI\n"
+  },
+  {
     "name" : "noop",
     "parameters" : [
 
