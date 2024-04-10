@@ -1,6 +1,5 @@
 [
   {
-    "name" : "didOpen",
     "parameters" : [
       {
         "name" : "file",
@@ -9,14 +8,14 @@
       },
       {
         "name" : "contents",
-        "type" : "Data",
-        "description" : "The file contents (data)."
+        "type" : "String",
+        "description" : "The file contents."
       }
     ],
-    "description" : "Did open file\n"
+    "description" : "Did open file\n",
+    "name" : "didOpen"
   },
   {
-    "name" : "didOpen",
     "parameters" : [
       {
         "name" : "workspace",
@@ -30,52 +29,52 @@
       },
       {
         "name" : "contents",
-        "type" : "Data",
-        "description" : "The file contents (data)."
-      }
-    ],
-    "description" : "Did open file in workspace\n"
-  },
-  {
-    "name" : "didSave",
-    "parameters" : [
-      {
-        "name" : "file",
         "type" : "String",
-        "description" : "The file that was opened."
+        "description" : "The file contents."
       }
     ],
-    "description" : "Did save file\n"
+    "description" : "Did open file in workspace\n",
+    "name" : "didOpen"
   },
   {
-    "name" : "didMoveCaret",
     "parameters" : [
       {
+        "description" : "The file that was opened.",
+        "name" : "file",
+        "type" : "String"
+      }
+    ],
+    "description" : "Did save file\n",
+    "name" : "didSave"
+  },
+  {
+    "parameters" : [
+      {
+        "description" : "The row in the file.",
         "name" : "row",
-        "type" : "Int",
-        "description" : "The row in the file."
+        "type" : "Int"
       },
       {
+        "description" : "The column in the file.",
         "name" : "column",
-        "type" : "Int",
-        "description" : "The column in the file."
+        "type" : "Int"
       }
     ],
-    "description" : "Did move caret to position\n"
+    "description" : "Did move caret to position\n",
+    "name" : "didMoveCaret"
   },
   {
-    "name" : "didActivateTab",
     "parameters" : [
       {
         "name" : "file",
-        "type" : "String",
-        "description" : "The file that was activated."
+        "description" : "The file that was activated.",
+        "type" : "String"
       }
     ],
-    "description" : "Did activate tab for file\n"
+    "description" : "Did activate tab for file\n",
+    "name" : "didActivateTab"
   },
   {
-    "name" : "didDeactivateTab",
     "parameters" : [
       {
         "name" : "file",
@@ -83,46 +82,47 @@
         "description" : "The file that was deactivated."
       }
     ],
-    "description" : "Did close tab for file\n"
+    "description" : "Did close tab for file\n",
+    "name" : "didDeactivateTab"
   },
   {
-    "name" : "didToggleNavigatorPane",
     "parameters" : [
       {
         "name" : "visible",
-        "type" : "Bool",
-        "description" : "Is the navigator pane visible?"
+        "description" : "Is the navigator pane visible?",
+        "type" : "Bool"
       }
     ],
-    "description" : "Did toggle navigator pane\n"
+    "description" : "Did toggle navigator pane\n",
+    "name" : "didToggleNavigatorPane"
   },
   {
-    "name" : "didToggleInspectorPane",
     "parameters" : [
       {
+        "description" : "Is the inspector pane visible?",
         "name" : "visible",
-        "type" : "Bool",
-        "description" : "Is the inspector pane visible?"
+        "type" : "Bool"
       }
     ],
-    "description" : "Did toggle inspector pane\n"
+    "description" : "Did toggle inspector pane\n",
+    "name" : "didToggleInspectorPane"
   },
   {
-    "name" : "registerCallback",
     "parameters" : [
       {
         "name" : "callback",
-        "type" : "AuroraAPI -> Bool",
-        "description" : "AuroraAPI Endpoint"
+        "description" : "AuroraAPI Endpoint",
+        "type" : "AuroraAPI -> Bool"
       }
     ],
-    "description" : "Register AuroraAPI\n"
+    "description" : "Register AuroraAPI\n",
+    "name" : "registerCallback"
   },
   {
-    "name" : "noop",
     "parameters" : [
 
     ],
-    "description" : "No Operation (noop)\n\nThis is a no operation function\nIt is used, and as the name suggests, to do nothing\n"
+    "description" : "No Operation (noop)\n\nThis is a no operation function\nIt is used, and as the name suggests, to do nothing\n",
+    "name" : "noop"
   }
 ]
