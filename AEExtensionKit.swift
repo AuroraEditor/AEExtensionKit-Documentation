@@ -19,15 +19,15 @@
 /// Did open file
 /// - Parameters:
 ///   - file: The file that was opened.
-///   - contents: The file contents (data).
-func didOpen(file: String, contents: Data)
+///   - contents: The file contents.
+func didOpen(file: String, contents: String)
 
 /// Did open file in workspace
 /// - Parameters:
 ///   - workspace: The current workspace.
 ///   - file: The file that was opened.
-///   - contents: The file contents (data).
-func didOpen(workspace: String, file: String, contents: Data)
+///   - contents: The file contents.
+func didOpen(workspace: String, file: String, contents: String)
 
 /// Did save file
 /// - Parameters:
