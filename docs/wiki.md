@@ -6,7 +6,7 @@
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
-<tr><td>contents</td><td>Data</td><td>The file contents (data).</td></tr>
+<tr><td>contents</td><td>Data</td><td>The file contents.</td></tr>
 </table>
 
 **Example Implementation:**
@@ -14,7 +14,7 @@
 public func respond(action: String, parameters: [String: Any]) -> Bool {
     if action == "didOpen" {
         if let file = parameters["file"] as? String,
-           let contents = parameters["contents"] as? Data {
+           let contents = parameters["contents"] as? String {
             // Do something
         }
     }
@@ -34,7 +34,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td>workspace</td><td>String</td><td>The current workspace.</td></tr>
 <tr><td>file</td><td>String</td><td>The file that was opened.</td></tr>
-<tr><td>contents</td><td>Data</td><td>The file contents (data).</td></tr>
+<tr><td>contents</td><td>Data</td><td>The file contents.</td></tr>
 </table>
 
 **Example Implementation:**
@@ -43,7 +43,7 @@ public func respond(action: String, parameters: [String: Any]) -> Bool {
     if action == "didOpen" {
         if let workspace = parameters["workspace"] as? String,
            let file = parameters["file"] as? String,
-           let contents = parameters["contents"] as? Data {
+           let contents = parameters["contents"] as? String {
             // Do something
         }
     }
