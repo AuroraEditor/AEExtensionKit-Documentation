@@ -13,7 +13,7 @@ jobs:
         run: swift application.swift
 
       - name: Upload documentation to repo
-        if: github.event.pull_request.merged == true
+        # if: github.event.pull_request.merged == true
         run: |
           git config --global user.name 'aurora-care-bear'
           git config --global user.email 'aurora-care-bear@users.noreply.github.com'
