@@ -19,6 +19,6 @@ jobs:
           git config --global user.name 'aurora-care-bear'
           git config --global user.email 'aurora-care-bear@users.noreply.github.com'
           git remote set-url --push origin https://aurora-care-bear:$BOT_TOKEN@github.com/AuroraEditor/AEExtensionKit-Documentation
-          git add -a docs
+          git add -A docs
           git commit -m "Update Cdocumentation"
           git push origin HEAD:main
